@@ -1,0 +1,9 @@
+services:
+  ansible:
+    image: ichikawayukko/ansible:9.8.0
+    volumes:
+      - ./:/ansible/
+      - /home/ansible/.ssh/:/root/.ssh/
+    working_dir: /ansible
+    command: tail -f
+
