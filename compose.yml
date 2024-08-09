@@ -1,6 +1,6 @@
 services:
   ansible:
-    image: ichikawayukko/ansible:9.8.0
+    image: ichikawayukko/ansible-runner:9.8.0
     volumes:
       - ./:/ansible/
       - /home/ansible/.ssh/:/root/.ssh/
