@@ -2,8 +2,7 @@ services:
   ansible:
     image: ichikawayukko/ansible-runner:9.8.0
     volumes:
-      - ./:/ansible/
-      - /home/ansible/.ssh/:/root/.ssh/
+      - ./:/ansible/                    # Playbooks Dir
+      - /home/ansible/.ssh/:/root/.ssh/ # Keys Dir
     working_dir: /ansible
     command: tail -f
-
